@@ -1,3 +1,6 @@
 <h1>Hello Heroku</h1>
 <p>testing heroku</p>
 <p>testing pipeline</p>
+<p><%= Rails.env.production? ? "production" : Rails.env.staging? ? "staging" : "development" %></p>
+<p><%= Time.current.hour %>:<%= Time.current.min %>:<%= Time.current.sec %></p>
+<p><%= Time.now.hour %>:<%= Time.now.min %>:<%= Time.now.sec %></p>
